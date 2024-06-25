@@ -1,0 +1,45 @@
+### POST Products
+GET http://localhost:3200/api/product/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+### Get Product Name
+GET http://localhost:3200/api/product/productname/ลีโอ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+### POST Product
+POST http://localhost:3200/api/product HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+{
+  "Product_Name": "เบียรลีโอ",
+  "Product_Code": "br100003",
+  "Product_Stock": 200,
+  "Product_Price":740,
+  "Product_Description":"ทดสอบ",
+  "Product_Status":"1",
+  "categoryId":null,
+  "productunit":null
+}
+
+#### PUT product
+PUT  http://localhost:3200/api/product/5 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+{
+  "Product_Name": "เบียรลีโอ",
+  # "Product_Code": "br100001",
+  # "Product_Stock": 85,
+  # "Product_Price":750,
+  # "Product_Description":"ทดสอบ",
+  # "Product_Status":"1",
+  # "categoryId":1,
+  "productunitId":2
+}
+
+### DELETE product
+DELETE  http://localhost:3200/api/product/4 HTTP/1.1
+Content-Type: application/json

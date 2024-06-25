@@ -1,0 +1,4 @@
+### pdf Bills
+GET http://localhost:3200/api/pdf/bills/6 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3OTM4OTg1NiwiZXhwIjoxNjgxOTgxODU2fQ.RwDRZC6SEOYxEEr6sTr34zljLHsqxwdp0pqL4OHCA_g

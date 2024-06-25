@@ -1,0 +1,52 @@
+
+POST http://localhost:3200/api/sale HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+{
+    "cart":[
+        {
+            "Sales_Quantity": 2,
+            "Sales_Unit_Price": 750,
+            "Sales_Sub_Total": 1500,
+            "productId":5,
+            "invoiceId":6,
+            "customerId":null,
+            "userId":1
+        },
+        {
+            "Sales_Quantity": 2,
+            "Sales_Unit_Price": 740,
+            "Sales_Sub_Total": 1480,
+            "productId":10,
+            "invoiceId":6,
+            "customerId":null,
+            "userId":1
+        },
+        {
+            "Sales_Quantity": 1,
+            "Sales_Unit_Price": 740,
+            "Sales_Sub_Total": 740,
+            "productId":1,
+            "invoiceId":6,
+            "customerId":null,
+            "userId":1
+        }
+    ],
+    "invoice":{
+        "Invoice_Amount_Tendered": null,
+        "Invoice_Bank_Account_Name": "ไทยพานิชย์",
+        "Invoice_Bank_Account_Number": "0887114000",
+        "Invoice_Payment_Type": 2
+    }
+}
+
+### get sales by invoiceId
+GET  http://localhost:3200/api/sale/invoice/2 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+### get all sales
+GET  http://localhost:3200/api/sale HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM

@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="mt-2">
+      <div>
+          <p class="text-xl text-center font-bold">ร้านขายสุรานะจ๊ะ</p>
+      </div>
+  </div>
+ 
+  <div class="mt-1">
+    <div class="text-center">
+        <p class="text-sm font-bold">ใบเสร็จรับเงิน #<%= rows[0].invoiceId %></p>
+    </div>
+        <table class="text-xs text-center" width="100%">
+            <thead>
+                <tr>
+                    <th class="font-bold">
+                        ชื่อสินค้า
+                    </th>
+                    <th class="font-bold text-center pl-6">
+                        จำนวน
+                    </th>
+                    <th class="font-bold text-end pr-6">
+                        ราคา
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i=0; i < rows.length; i++){ %>
+                <tr>
+                    <td>
+                        <%= rows[i].product.Product_Name %>
+                    </td>
+                    <td class="text-center pl-6">
+                        <%= rows[i].Sales_Quantity.toLocaleString() %>
+                    </td>
+                    <td class="text-end pr-6">
+                        <%= rows[i].Sales_Sub_Total.toLocaleString('en-US') %>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <p class="text-end mt-4 mr-6 text-xs">ราคารวม  <%= rows[0].invoice.Invoice_Sub_Total.toLocaleString('en-US')  %> บาท </p>
+  </div>
+</div>

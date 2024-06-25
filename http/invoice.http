@@ -1,0 +1,25 @@
+### Get invoice
+GET http://localhost:3200/api/invoice HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+### POST invoice (button click start sale)
+POST http://localhost:3200/api/invoice HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+{
+  "Invoice_Total_Amount": null,
+  "Invoice_Payment_Type": null,
+  "Invoice_Sub_Total": null,
+  "Invoice_Amount_Tendered": null,
+  "Invoice_Bank_Account_Name": null,
+  "Invoice_Bank_Account_Number": null,
+  "customerId":null,
+  "userId":1
+}
+
+### GET Products
+GET http://localhost:3200/api/invoice/latest HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3OTM4OTg1NiwiZXhwIjoxNjgxOTgxODU2fQ.RwDRZC6SEOYxEEr6sTr34zljLHsqxwdp0pqL4OHCA_g

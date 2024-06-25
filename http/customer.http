@@ -1,0 +1,11 @@
+### Post
+POST http://localhost:3200/api/customer HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbG5hbWUiOiJOYXR0YXBvbiBDaG9tc3VudGhpYSIsInVzZXJuYW1lIjoibmF0dGFwb24iLCJjb250YWN0IjoiOTgg4Lir4Lih4Li5IDcg4LiVLuC5guC4leC4meC4lCIsImlhdCI6MTY3NTQxOTMwNSwiZXhwIjoxNjc4MDExMzA1fQ.AJdVo_4UVUeqCtRUo1JfdxSIQcj1qpeAUR-b64qmEFM
+
+{
+ "Customer_Name": "potae4nn",
+  "Customer_Code": "CUS0001",
+  "Customer_Contact": "0647774744",
+  "Customer_Address":"โตนด หมู่ 7 ต.โตนด"
+}
